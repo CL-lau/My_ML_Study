@@ -92,8 +92,7 @@ def classifyPerson():
     normMat, ranges, minVals = autoNorm(datingDataMat)
     
     classifierResult = classify0((inArr-minVals)/ranges,normMat,datingLabels,3)
-    print("You will probably like this person: ",\
-          resultList[classifierResult-1])
+    print("You will probably like this person: ",resultList[classifierResult-1])
   
     
 
@@ -139,6 +138,6 @@ def handwritingClassTest():
 #datingClassTest()
 #classifyPerson()
 
-handwritingClassTest()
+#handwritingClassTest()
 
 
